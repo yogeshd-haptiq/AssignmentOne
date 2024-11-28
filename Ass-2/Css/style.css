@@ -101,6 +101,7 @@ a{
     line-height: 30px;
     padding: 9px 20px;
     font-weight: 500;
+    border-radius: 2px;
     border: 0.5px solid rgba(255, 100, 100, 1);
     transition: all 0.3s ease-in-out;
 }
@@ -167,6 +168,7 @@ a{
 .recentItem{
     background: rgba(255, 255, 255, 1);
     padding: 25px;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 .recentItem:hover{
@@ -209,7 +211,7 @@ a{
 }
 .workItem .workLeft img{
     width: 246px;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: all 0.3s ease-in-out;
 }
 .workItem img:hover{
