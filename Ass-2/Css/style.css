@@ -24,7 +24,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
     /* margin-bottom: 160px; */
 }
 .menu{
@@ -41,11 +41,16 @@ a{
 .header .logo:hover{
     text-decoration: underline;
 }
-/* .header .logo span{  */
 .header .logo span{ 
     font-size: 32px;
     color: rgba(255, 100, 100, 1);
+    transform: translateY(0px);
+    display: inline-block;
+    transition: all 0.3s ease-in;
 }
+.header .logo:hover{
+    color: rgba(255, 100, 100, 1);
+} 
 .header .navLinks{
     display: flex;
     align-items: center;
@@ -106,9 +111,16 @@ a{
     color: rgba(255, 100, 100, 1);
     border: 0.5px solid rgba(255, 100, 100, 1);
 }
-.heroSection .heroRight .eclipse{
+.heroSection .heroRight .eclipse::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px;
     background: rgba(237, 247, 250, 1);
     border-radius: 50%;
+    width: 343px;
+    height: 343px;
+    z-index: -1;
 }
 .heroSection .heroRight .heroImg{
     width: 343px;
@@ -116,6 +128,9 @@ a{
     object-fit:cover;
     border-radius: 50%;
     border-bottom: 5px solid ;
+}
+.heroSection .heroRight{
+    position: relative;
 }
 
 /* ---------------------Recent Post -------------------- */
@@ -138,13 +153,18 @@ a{
     line-height: 23.5px;
     font-weight: 400;
     color: rgba(0, 168, 204, 1);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+.recentTop a:hover{
+    color: rgba(255, 100, 100, 1);
 }
 .recentBottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
-    gap: 40px;
+    padding-bottom: 32px;
+    gap: 20px;
 }
 .recentItem{
     /* width: 418px; */
@@ -195,7 +215,7 @@ a{
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
-.workItem:hover img{
+.workItem img:hover{
     box-shadow: 2px 2px 18px rgba(33, 36, 61, 1);
 }
 .workRight h3{
@@ -205,7 +225,7 @@ a{
     color: rgba(33, 36, 61, 1);
     transition: all 0.3s ease-in-out;
 }
-.workItem:hover .workRight h4 > span{
+.workItem .workRight:hover h4 > span{
     background: rgba(255, 100, 100, 1);
 }
 .workItem:hover h3{
@@ -291,6 +311,7 @@ footer p{
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+        gap: 32px;
     }
     .heroSection .heroRight .heroImg{
         width: 243px;
@@ -318,6 +339,15 @@ footer p{
     }
     .recentSection{
         padding-bottom: 40px;
+    }
+    .heroSection .heroRight .eclipse::before{
+        top: 10px;
+        left: -10px;
+        width: 243px;
+        height: 243px;
+    }
+    .recentItem{
+        width: 90%;
     }
     .recentTop a{
         display: none;
