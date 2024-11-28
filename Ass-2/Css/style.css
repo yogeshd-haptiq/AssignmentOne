@@ -96,8 +96,7 @@ a{
 .heroLeft .btn{
     color: rgba(255, 255, 255, 1);
     background: rgba(255, 100, 100, 1);
-    width: 209px;
-    height: 47px;
+    max-width: 209px;
     font-size: 20px;
     line-height: 30px;
     padding: 9px 20px;
