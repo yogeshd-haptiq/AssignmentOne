@@ -15,9 +15,14 @@ ul{
 a{
     text-decoration: none;
 }
+p{
+    color: rgba(33, 36, 61, 1);
+    font-size: 16px;
+    line-height: 24px;
+}
 .container{
     max-width: 1170px;
-    padding: 20px;
+    padding: 0px 20px;
     margin: 0 auto;
 }
 /* ---------------------HEADER---------------------- */
@@ -25,7 +30,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding:30px 0px;
     /* margin-bottom: 160px; */
 }
 .menu{
@@ -74,7 +79,7 @@ a{
     align-items: center;
     justify-content: center;
     gap: 110px;
-    min-height: 100vh;
+    min-height: calc(100vh - 92px);
 }
 .heroLeft{
     display: flex;
@@ -89,8 +94,6 @@ a{
     color: rgba(33, 36, 61, 1);
 }
 .heroLeft p{
-    font-size: 16px;
-    line-height: 23.5px;
     font-weight: 500;
 }
 .heroLeft .btn{
@@ -192,11 +195,6 @@ a{
     color: rgba(0, 0, 0, 1);
     margin: 0 18px;
 }
-.recentBottom .recentItem p{
-    font-size: 16px;
-    line-height: 23px;
-    color: rgba(33, 36, 61, 1);
-}
 /* -----------------------Featured works----------------- */
 .workHeading{
     margin-top: 20px;
@@ -205,8 +203,7 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding:30px 0px;
     border-bottom: 1px solid rgba(224, 224, 224, 1);
 }
 .workItem .workLeft img{
@@ -247,11 +244,6 @@ a{
     padding:  0 5px;
     transition: all 0.3s ease-in-out;
 }
-.workRight p{
-    color: rgba(33, 36, 61, 1);
-    font-size: 16px;
-    line-height: 23px;
-}
 
 /* --------------------footer -------------------------- */
 footer{
@@ -277,9 +269,9 @@ footer .iconImg img:hover{
 }
 
 footer p{
-    color: rgba(33, 36, 61, 1);
     font-size: 14px;
-    line-height: 20px;font-weight: 400;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 
