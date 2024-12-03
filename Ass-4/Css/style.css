@@ -19,6 +19,17 @@
     scroll-behavior: smooth;
     font-family: "Manrope", sans-serif;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--SectionBackground);
+    border-radius: 3px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--MainColor);
+    border-radius: 2px;
+}
 a{
     text-decoration: none;
 }
@@ -115,6 +126,14 @@ ul{
     gap: 10px;
 }
 .navBar .RightNav .button .signup{
+    background: var(--DarkColor);
+    color: var(--WHite);
+}
+.navBar .RightNav .button .signup:hover{
+    background: var(--WHite);
+    color: var(--DarkColor);
+}
+.navBar .RightNav .button .login:hover{
     background: var(--DarkColor);
     color: var(--WHite);
 }
@@ -440,6 +459,10 @@ ul{
 .footertop .socials img{
     padding: 16px 21px;
     border: 1px solid var(--MainColor);
+    cursor: pointer;
+}
+.footertop .socials img:hover{
+    background: var(--MainColor);
 }
 .footerbottom {
     display: flex;
@@ -452,12 +475,16 @@ ul{
     line-height: 30px;
     font-weight: 700;
     padding-bottom: 21px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
 }
 .footerbottom .footeritem a{
     font-size: 17px;
     line-height: 34px;
     font-weight: 500;
     color: var(--WHite);
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
 }
 .footerbottom .footeritem:last-child li{
     display: flex;
