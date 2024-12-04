@@ -676,7 +676,7 @@ Hero Section
         grid-template-columns: repeat(1, 1fr);
     }
     .blogCard{
-        max-width: 373px;
+        max-width: 73px;
         margin: 0px auto;
     }
     .blogCard .blogTop img{
