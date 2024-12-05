@@ -150,6 +150,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all 0.3s ease-in;
+}
+.services .servicesItem:hover{
+    transform: translateY(-10px);
 }
 .servicesItem .serviceTop{
     max-width: 72px;
@@ -402,6 +406,16 @@
     gap: 20px;
 }
 @media(max-width:767px){
+    .heroWrapper h1{
+        font-size: 40px;
+        line-height: 57px;
+    }
+    .navbar .headerLogo{
+        color: #23A6F0;
+    }
+    #navbarText a{
+        color: #737373;
+    }
     .heroButtons{
         text-align: center;
         flex-direction: column;
@@ -427,6 +441,11 @@
     }
     .copyrightWrapper h6{
         color: #ffffff;
-
+        
+    }
+}
+@media(max-width:588px){
+    .rightNav .headerBtnSecondary {
+        display: none;
     }
 }
