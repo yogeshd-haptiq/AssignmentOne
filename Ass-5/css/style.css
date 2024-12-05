@@ -405,16 +405,28 @@
     display: flex;
     gap: 20px;
 }
+@media(max-width:990px){
+    .mobileNavbar{
+        background: #252B42;
+        border: none;
+    }
+    .navbar-toggler span > img{
+        max-width: 23px;
+    }
+}
 @media(max-width:767px){
+    .collapsed{
+        border-color: transparent;
+    }
     .heroWrapper h1{
         font-size: 40px;
         line-height: 57px;
     }
     .navbar .headerLogo{
-        color: #23A6F0;
+        color: #ffffff;
     }
     #navbarText a{
-        color: #737373;
+        color: #ffffff;
     }
     .heroButtons{
         text-align: center;
